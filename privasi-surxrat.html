@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kebijakan Privasi – SURXRAT</title>
+  <meta name="description" content="Kebijakan Privasi pengguna aplikasi surxrat." />
+  <style>
+    :root{
+      --bg: #0b0f14;
+      --card: #111826;
+      --muted: #91a4b7;
+      --text: #e7edf4;
+      --primary: #4aa8ff;
+      --accent: #8b5cf6;
+      --success: #22c55e;
+      --danger: #ef4444;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background:
+        radial-gradient(1200px 600px at 100% -10%, rgba(74,168,255,.15), transparent 60%),
+        radial-gradient(800px 400px at -10% 100%, rgba(139,92,246,.12), transparent 60%),
+        var(--bg);
+      line-height:1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .container{ max-width: 920px; margin: 0 auto; padding: 24px; }
+
+    header{
+      position: sticky; top:0; z-index:10;
+      backdrop-filter: saturate(140%) blur(8px);
+      background: linear-gradient(180deg, rgba(11,15,20,.9), rgba(11,15,20,.65) 60%, transparent);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .nav{ display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 24px; }
+    .brand{ display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:.3px }
+    .logo{ width:36px; height:36px; border-radius:12px; background: linear-gradient(135deg, var(--primary), var(--accent)); box-shadow: var(--shadow); display:grid; place-items:center; font-weight:900; }
+    .logo span{ color:white }
+    .tag{ font-size:12px; color: var(--muted); border:1px solid rgba(255,255,255,.08); padding:4px 10px; border-radius:999px }
+
+    .hero{ display:grid; gap:14px; padding:40px 24px 12px }
+    .hero h1{ margin:0; font-size: clamp(26px, 4.2vw, 40px); line-height:1.2 }
+    .hero p{ margin:0; color: var(--muted) }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .grid{ display:grid; gap:16px }
+    @media (min-width: 880px){
+      .grid{ grid-template-columns: 1.3fr .7fr; }
+      .stack{ position: sticky; top:76px; height: fit-content }
+    }
+
+    h2{ font-size: clamp(18px, 2.6vw, 24px); margin:0 0 8px }
+    h3{ font-size: 16px; margin:18px 0 8px }
+    p, li{ color: #cfe0ef }
+
+    .section{ padding:18px; }
+    .section + .section{ border-top:1px dashed rgba(255,255,255,.08) }
+
+    .kapsul{ display:inline-flex; align-items:center; gap:8px; font-size:12px; color:var(--muted); border:1px solid rgba(255,255,255,.08); border-radius:999px; padding:6px 10px }
+
+    details{ border: 1px solid rgba(255,255,255,.08); border-radius: 14px; padding: 10px 12px; background: rgba(255,255,255,.02) }
+    summary{ cursor:pointer; font-weight:600 }
+    details p{ margin:10px 0 0 }
+
+    .list-check{ list-style:none; padding-left:0; margin:8px 0 0 }
+    .list-check li{ position:relative; padding-left:26px; margin:8px 0 }
+    .list-check li::before{ content:""; position:absolute; left:0; top:6px; width:18px; height:18px; border-radius:6px; background: linear-gradient(135deg, var(--success), var(--primary)); box-shadow: inset 0 0 0 2px rgba(11,15,20,.9) }
+
+    .callout{ border-left:4px solid var(--primary); background: rgba(74,168,255,.08); padding:14px; border-radius: 12px }
+    .danger{ border-left-color: var(--danger); background: rgba(239,68,68,.08) }
+
+    .footer{ padding:24px; text-align:center; color: var(--muted) }
+    .btn{
+      display:inline-block; text-decoration:none; font-weight:700; padding:12px 16px; border-radius: 14px;
+      border:1px solid rgba(255,255,255,.1); background:linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    }
+    .btn:active{ transform: translateY(1px) }
+    .btn-primary{ border-color: rgba(74,168,255,.45); background: linear-gradient(135deg, rgba(74,168,255,.2), rgba(139,92,246,.18)); }
+    .muted{ color: var(--muted) }
+    a{ color: var(--primary) }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav container">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"><span>SXR</span></div>
+        <div>
+          <div>SURXRAT</div>
+          <div class="muted" style="font-size:12px">Kebijakan Privasi</div>
+        </div>
+      </div>
+      <a class="btn btn-primary" href="#kontak">Kontak</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div class="kapsul">Diperbarui: 02 september  2025</div>
+      <h1>Transparansi Data untuk Pengguna <span style="color:var(--primary)">SURXRAT</span></h1>
+      <p>Dokumen ini menjelaskan bagaimana data Anda diproses saat menggunakan aplikasi SURXRAT. Harap baca dengan saksama.</p>
+    </section>
+
+    <div class="grid" style="margin-top:16px">
+      <article class="card">
+        <div class="section">
+          <h2>1. Ringkasan</h2>
+          <p>SURXRAT adalah aplikasi yang memerlukan izin sistem tertentu untuk menjalankan fungsinya. Kami berkomitmen menjaga privasi pengguna dan hanya memproses data sesuai dengan tujuan yang dijelaskan di bawah.</p>
+          <ul class="list-check">
+            <li>Kami tidak menjual data pribadi.</li>
+            <li>Kami hanya mengumpulkan data yang relevan dengan fitur.</li>
+            <li>Anda dapat meminta penghapusan data sesuai bagian <em>Hak Pengguna</em>.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>2. Data yang Dikumpulkan</h2>
+          <p>Bergantung pada fitur yang Anda aktifkan, aplikasi dapat memproses:</p>
+          <ul>
+            <li>Identitas perangkat (mis. model, versi OS, ID perangkat non-permanen).</li>
+            <li>Log penggunaan & diagnostik (crash log, performa).</li>
+            <li>Izin yang Anda berikan (mis. notifikasi, overlay, akses penyimpanan/kamera & sensor, bila diperlukan oleh fitur).</li>
+            <li>Data yang Anda masukkan secara manual di aplikasi.</li>
+          </ul>
+          <p class="muted">Catatan: Rincian pastinya bergantung pada konfigurasi build Anda.</p>
+        </div>
+
+        <div class="section">
+          <h2>3. Dasar & Tujuan Pemrosesan</h2>
+          <p>Data diproses untuk:</p>
+          <ul>
+            <li>Menyediakan dan meningkatkan layanan aplikasi.</li>
+            <li>Keamanan, pencegahan penyalahgunaan, dan audit.</li>
+            <li>Dukungan teknis dan pemecahan masalah.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>4. Penyimpanan & Retensi</h2>
+          <p>Data hanya disimpan selama diperlukan untuk mencapai tujuan di atas. Setelah itu akan dihapus atau dianonimkan secara aman.</p>
+        </div>
+
+        <div class="section">
+          <h2>5. Berbagi Data</h2>
+          <p>Kami dapat membagikan data kepada pihak ketiga tepercaya hanya untuk operasional aplikasi (mis. layanan pengantaran notifikasi/log). Kami memastikan pihak ketiga tersebut mematuhi standar keamanan dan privasi yang setara.</p>
+        </div>
+
+        <div class="section">
+          <h2>6. Keamanan</h2>
+          <p>Kami menerapkan langkah teknis dan organisatoris untuk melindungi data dari akses tidak sah, perubahan, atau penghancuran. Namun, tidak ada metode transmisi/penyimpanan elektronik yang sepenuhnya aman.</p>
+        </div>
+
+        <div class="section">
+          <h2>7. Hak Pengguna</h2>
+          <p>Anda memiliki hak untuk:</p>
+          <ul>
+            <li>Meminta akses terhadap data pribadi Anda.</li>
+            <li>Meminta koreksi atau penghapusan data.</li>
+            <li>Menarik persetujuan (berdampak pada fungsi tertentu).</li>
+          </ul>
+          <p>Permintaan dapat diajukan melalui kontak di bagian <a href="#kontak">Kontak</a>.</p>
+        </div>
+
+        <div class="section">
+          <h2>8. Privasi Anak</h2>
+          <p>Aplikasi tidak ditujukan untuk anak di bawah 13 tahun (atau sesuai hukum wilayah Anda). Kami tidak secara sengaja mengumpulkan data anak.</p>
+        </div>
+
+        <div class="section">
+          <h2>9. Perubahan Kebijakan</h2>
+          <p>Kebijakan dapat diperbarui sewaktu-waktu. Perubahan material akan diberitahukan melalui aplikasi atau kanal resmi.</p>
+        </div>
+
+        <div class="section">
+          <h2>10. Pertanyaan Umum</h2>
+          <details>
+            <summary>Apakah data saya dijual?</summary>
+            <p>Tidak. Kami tidak menjual data pribadi kepada pihak mana pun.</p>
+          </details>
+          <details>
+            <summary>Apakah aplikasi berjalan tanpa izin tertentu?</summary>
+            <p>Beberapa fitur memerlukan izin sistem. Anda dapat menolak, namun sebagian fungsi mungkin tidak bekerja.</p>
+          </details>
+        </div>
+
+        <div class="section danger">
+          <h2>Penafian (Disclaimer) Penggunaan</h2>
+          <p><strong>surxrat</strong> disediakan apa adanya (<em>as is</em>) untuk tujuan yang sah sesuai hukum yang berlaku. <strong>Pengembang/Administrator tidak bertanggung jawab atas setiap kerugian, tuntutan, atau konsekuensi hukum yang timbul dari penyalahgunaan aplikasi oleh pengguna.</strong> Seluruh tindakan dan konsekuensi penggunaan berada sepenuhnya di tangan pengguna.</p>
+        </div>
+      </article>
+
+      <aside class="stack">
+        <div class="card" style="padding:18px">
+          <h2>Status Izin Aplikasi Admin SURXRAT</h2>
+          <p class="muted" style="margin-top:-6px">Pastikan Anda hanya mengaktifkan izin yang diperlukan.</p>
+          <ul class="list-check">
+            <li>Penyimpanan</li>
+            <li>Akses internet</li>
+          </ul>
+          <p class="callout" style="margin-top:14px">Anda dapat meninjau atau mencabut izin kapan saja melalui <em>Pengaturan &gt; Aplikasi &gt; SURXRAT</em>.</p>
+        </div>
+
+        <div id="kontak" class="card" style="padding:18px; margin-top:16px">
+          <h2>Kontak</h2>
+          <p>Jika Anda memiliki pertanyaan terkait kebijakan privasi ini, hubungi kami:</p>
+          <ul>
+            <li>Telegram: <a href="https://t.me/texasdxx" target="_blank" rel="noopener">@DomzyOfficial</a></li>
+            <li>Email: <a href="/cdn-cgi/l/email-protection#2e5d475d5b5c574f56465b405a4b5c6e49434f4742004d4143"><span class="__cf_email__" data-cfemail="2a5943595f58534b52425f445e4f586a4d474b434604494547">[email&#160;protected]</span></a></li>
+          </ul>
+          <a class="btn" href="#" onclick="window.print();return false;">Cetak / Simpan PDF</a>
+        </div>
+      </aside>
+    </div>
+
+    <section class="card" style="margin-top:16px">
+      <div class="section">
+        <h2>Persetujuan</h2>
+        <p>Dengan menggunakan aplikasi surxrat, Anda menyatakan telah membaca, memahami, dan menyetujui Kebijakan Privasi ini.</p>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:16px">
+      <div class="section">
+        <h2>Informasi Legal</h2>
+        <p>Dokumen ini disusun untuk memenuhi prinsip perlindungan data umum. Jika wilayah Anda memiliki peraturan spesifik (mis. GDPR, PDP, CCPA), dan Anda memerlukannya, sesuaikan bagian-bagian relevan dengan ketentuan setempat.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© 2025 SURXRAT. Semua hak dilindungi.</div>
+    <div class="muted" style="margin-top:6px">Versi kebijakan: 1.0</div>
+  </footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
